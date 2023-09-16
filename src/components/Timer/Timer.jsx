@@ -38,8 +38,8 @@ const Timer = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const linearGradient =
-    "linear-gradient(100deg, #C71585, #000000, #551A8B 100%)";
+  // const linearGradient =
+    // "linear-gradient(100deg, #C71585, #000000, #551A8B 100%)";
 
 
 

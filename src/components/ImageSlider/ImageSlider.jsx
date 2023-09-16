@@ -10,7 +10,7 @@ const ImageSlider = ({ images, slideInterval }) => {
     }, slideInterval);
 
     return () => clearInterval(intervalId);
-  }, [index]);
+  }, [index, images.length, slideInterval]);
 
   return (
     <div className={style.container}>

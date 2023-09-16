@@ -8,7 +8,7 @@ import NFT_5 from "../../assets/Blog_Assets/Rectangle 4258.png";
 
 const ReactSlider = () => {
     const sliderRef = useRef("");
-  const slides = [1, 2, 3, 4];
+  // const slides = [1, 2, 3, 4];
 
 const slideLeft = () => {
    sliderRef.current.scrollLeft = sliderRef.current.scrollLeft + 500;
