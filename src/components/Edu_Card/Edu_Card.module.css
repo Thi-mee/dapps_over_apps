@@ -1,0 +1,132 @@
+.card{
+    color: var(--primary-text-color);
+    width: 330px;
+    min-width: 330px;
+    border-radius: 10px;
+    background-color: #1B1C1E;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.card__img{
+    object-fit: cover;
+    width: 330px;
+}
+
+.card__text{
+    padding: 1em;
+}
+
+.card__text h3{
+    font-size: 1.25em;
+}
+
+.card__small__text{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.card__small__text span{
+    /* border: 1px solid red; */
+    width: 130%;
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.card__text h3{
+    text-align: left;
+}
+
+.card__small__text p{
+    font-size: .97rem;
+    /* width: 50%; */
+}
+
+.card__icon{
+    font-size: .97rem;
+    margin-right: .3em;
+}
+
+.card__level{
+    border: 2px solid var(--asset-bg-color);
+    padding: .4em .6em;
+    width: 103px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.card__text a{
+    padding: 1em 7.2em; 
+    margin-top: 1.5em;
+    background: linear-gradient(90deg, var(--secondary-bg-color) 0%, var(--asset-bg-color) 100%);
+    color: var(--primary-text-color);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+@media only screen and (max-width: 810px) {
+    .card{
+        min-width: 30%;
+    }
+
+    .card__img{
+        width: 220px;
+    }
+
+    .card__text{
+        padding: 0.5em;
+    }
+
+    .card__text h3{
+        font-size: 1.09em;
+    }
+
+    .card__text a{
+        padding: 1em 5em;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .card__img{
+        width: 190px;
+    }
+
+    .card__small__text p{
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .card{
+        width: 270px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .card__img{
+        width: 270px;
+    }
+
+    .card__level{
+        border: 1px solid var(--asset-bg-color);
+    }
+
+    .card__text{
+        padding: 1em;
+    }
+        .card__text a{
+        padding: 1em 7.5em;
+        margin-top: 2em;
+    }
+}

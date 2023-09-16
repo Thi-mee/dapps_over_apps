@@ -1,0 +1,153 @@
+.intro__head{
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--primary-text-color);
+    text-align: center;
+    margin-top: 3.5em;
+}
+
+.stories{
+    color: var(--secondary-bg-color);
+}
+
+.ideas{
+    color: var(--asset-bg-color);
+}
+
+.intro__text{
+    font-size: 1.25rem;
+    color: var(--primary-text-color);
+    text-align: center;
+    margin-top: 0.9em;
+}
+
+.recent_blog_post{
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog__content__text{
+    color: var(--asset-bg-color);
+    font-size: 1.75rem;
+    margin-top: 5em;
+    margin-bottom: 2em;
+}
+
+.all__blog__posts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5em;
+    margin-bottom: 5em;
+}
+
+.blog__posts h3{
+    color: var(--secondary-bg-color);
+    font-size: 1.55rem;
+    margin-bottom: 2em;
+}
+
+.first__card{
+    width: 454px;
+    max-width: 454px;
+    border: 5px solid #551A8B;
+    border-radius: 59px 10px 40px 10px;
+    padding: 2em;
+}
+
+.first__card img{
+    width: 384px;
+}
+
+
+.blog__posts{
+    margin-top: 13em;
+    margin-bottom: 10em;
+}
+
+@media only screen and (max-width: 1000px) {
+    .all__blog__posts{
+        gap: 1em;
+    }
+
+    .recent_blog_post{
+        gap: 0.5em;
+        flex-direction: column;
+    }
+
+    .blog__content__text{
+        margin-top: 3em;
+    }
+
+    .all__blog__posts{
+        gap: 3em;
+    }
+
+    .all__blog__posts section{
+        width: 230px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .all__blog__posts{
+        flex-direction: column;
+        gap: 2em;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .intro__head{
+        font-size: 1.45rem;
+    }
+
+    .intro__text{
+        font-size: 1rem;
+    }
+    
+    .blog__content__text{
+        margin-bottom: .5em;
+    }
+
+    .blog__posts{
+        margin-top: 5em;
+        margin-bottom: 7em;
+    }
+
+    .blog__posts h3{
+        margin-bottom: 1em;
+    }
+
+    .all__blog__posts{
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
+
+    .all__blog__posts section{
+        width: 300px;
+        max-width: 300px;
+        padding: 1em;
+    }
+
+    .all__blog__posts img{
+        width: 284px;
+    }
+
+    .first__card{
+        width: 340px;
+        min-width: 340px;
+        padding: 1em;
+        text-align: justify;
+        border: 2px solid #551A8B;
+        margin: 1em;
+        margin: 1em 0;
+    }
+
+    .first__card img{
+        width: 300px;
+        margin-top: .8em;
+    }
+
+}

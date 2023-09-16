@@ -1,0 +1,137 @@
+.vector_1 {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    
+  }
+
+  .vector_2{
+    position: absolute;
+    top: 390px;
+    right: 450px;
+    
+  }
+
+  .vector_4{
+    position: absolute;
+    top: 80px;
+    left: 0px;
+  }
+
+  .vector_3{
+    position: absolute;
+    top: 400px;
+    left: 450px;
+    
+  }
+
+.vector__images{
+    position: relative;
+    margin-top: 2em;
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.vector__images h1{
+    color: var(--primary-text-color);
+    margin-top: 4em;
+}
+
+.vector__images p{
+    color: var(--primary-text-color);
+    font-size: 1.15rem;
+    width: 70%;
+    min-width: 70%;
+    margin: 0 auto;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+
+.crypto__currency{
+  color: var(--asset-bg-color);
+}
+
+.web__3{
+  color: #DF9994;
+}
+
+.blockchain{
+  color: var(--secondary-bg-color);
+}
+
+.edu_col{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8em;
+}
+
+.edu__cols{
+    margin-top: 20em;
+    margin-bottom: 10em;
+}
+
+@media only screen and (max-width: 850px){
+  .vector_4{
+    top: 170px;
+    left: 10px;
+  }
+
+  .vector_2{
+    right: 130px;
+  }
+
+  .vector_3{
+    left: 120px;
+  }
+
+  .edu_col{
+    justify-content: center;
+    gap: 2em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .vector__images h1{
+    font-size: 2rem;
+  }
+
+  .vector__images p{
+    font-size: 1rem;
+  }
+
+  .vector__images{
+    margin-top: 0;
+  }
+
+  .vector_1{
+    width: 15%;
+    top: 60px;
+  }
+
+  .vector_2{
+    width: 30%;
+    top: 490px;
+    right: 10px;
+  }
+
+  .vector_3{
+    width: 30%;
+    top: 500px;
+    left: 10px;
+  }
+  .vector_4{
+    width: 30%;
+    top: 80px;
+  }
+
+  .vector__images p{
+    width: 100%;
+  }
+
+  .edu_col{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+  }
+}

@@ -1,0 +1,183 @@
+.vector__images{
+    position: relative;
+    border: 1px solid transparent;
+}
+
+.ellipse_1{
+    position: absolute;
+    top: 20px;
+    left: 150px;
+}
+
+.circle_1{
+    position: absolute;
+    top: 450px;
+    left: 50px;
+}
+
+.circle_2{
+    position: absolute;
+    top: 50px;
+    right: 30px;
+}
+
+.ellipse_2{
+    position: absolute;
+    top: 300px;
+    right: 300px;
+}
+
+.ellipse_3{
+    position: absolute;
+    top: 450px;
+    right: 100px;
+}
+
+.vector__images__text{
+    color: var(--primary-text-color);
+    text-align: center;
+    margin-top: 12em;
+    margin-bottom: 15em;
+}
+
+.vector__images__text h1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.pink__span{
+    color: var(--asset-bg-color);
+}
+
+.purple__span{
+    color: var(--secondary-bg-color);
+}
+
+.cream__span{
+    color: #EEB8AC;
+}
+
+.vector__images__text p{
+    font-size: 1.15rem;
+    margin-top: 1em;
+}
+
+.portfolio__section{
+    color: var(--primary-text-color);
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    margin-top: 7em;
+    position: relative;
+    margin-bottom: 10em;
+}
+
+.portfolio__section div h2{
+    font-size: 2.5rem;
+}
+
+.portfolio__section div:last-child{
+    margin-top: 20em;
+    border: 1px solid red;
+}
+
+.pink__line{
+    background-color: var(--asset-bg-color);
+    position: absolute;
+    top: 600px;
+    left: -90px;
+    border: 1px solid var(--asset-bg-color);
+    width: 130%;
+}
+
+.second__pink__line{
+    background-color: var(--asset-bg-color);
+    position: absolute;
+    top: 600px;
+    left: -90px;
+    border: 1px solid var(--asset-bg-color);
+    width: 130%;
+}
+
+.third__pink__line{
+    background-color: var(--asset-bg-color);
+    position: absolute;
+    top: 600px;
+    left: -90px;
+    border: 1px solid var(--asset-bg-color);
+    width: 130%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .portfolio__section img{
+        width: 100%;
+    }
+
+    .portfolio__section div h2{
+        font-size: 2rem;
+    }
+
+    .second__pink__line, .pink__line, .third__pink__line{
+        top: -50px;
+    }
+
+    .portfolio__section{
+        margin-bottom: 0em;
+    }
+}
+
+@media only screen and (max-width: 810px){
+    .vector__images__text h1{
+        font-size: 2.3rem;
+    }
+
+    .ellipse_2{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .ellipse_1{
+        width: 10%;
+        top: 120px;
+        left: 24px;
+    }
+
+    .circle_1{
+        width: 10%;
+    }
+
+    .circle_2{
+        width: 10%;
+        top: 100px;
+    }
+
+    .ellipse_3{
+        width: 13%;
+    }
+
+    .vector__images__text h1{
+        font-size: 2rem;
+    }
+
+    .vector__images__text p{
+        font-size: 1rem;
+    }
+
+    .portfolio__section{
+        flex-direction: column;
+    }
+
+    .portfolio__section h2{
+        font-size: 1.2rem;
+    }
+
+    .portfolio__section p{
+        font-size: 1rem;
+        width: 80%;
+        float: right;
+        text-align: right;
+        margin-bottom: 3em;
+    }
+}
