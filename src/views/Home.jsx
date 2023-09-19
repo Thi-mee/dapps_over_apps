@@ -12,7 +12,7 @@ const Home = () => {
       <div className={style.pink_blur}></div>
       <div className={style.purple_blur}></div>
       <div className={style.first_section}>
-        <img src={Frame_2} alt='' className={style.hero_img}  />
+        <img src={Frame_2} alt='' className={style.hero_img} />
         <div className={style.ctn_text}>
           <h1>A Home for all techies and creative builders</h1>
           <p>Encouraging builder and traditional developers explore the world of web 3.0 and "get smart" with blockchain infrastructures</p>

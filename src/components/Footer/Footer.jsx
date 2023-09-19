@@ -17,28 +17,28 @@ const Footer = () => {
       <svg width="130%" height="100%" className={style.footer__line}>
         <defs>
           <linearGradient id="gradient" x1="0%" y1="0%" x2="50%" y2="0%">
-            <stop offset="0%" stop-color="var(--asset-bg-color)" />
-            <stop offset="100%" stop-color="var(--secondary-bg-color)" />
+            <stop offset="0%" stopColor="var(--asset-bg-color)" />
+            <stop offset="100%" stopColor="var(--secondary-bg-color)" />
           </linearGradient>
         </defs>
         <path
           d="M30 10 L500 10 L600 90 L3000 90"
           stroke="url(#gradient)"
-          stroke-width="3"
+          strokeWidth="3"
         />
       </svg>
       <div className={style.small__footer__line__div}>
         <svg width="250%" height="100%" className={style.small__footer__line}>
           <defs>
             <linearGradient id="gradient2" x1="0%" y1="0%" x2="50%" y2="0%">
-              <stop offset="0%" stop-color="var(--asset-bg-color)" />
-              <stop offset="100%" stop-color="var(--secondary-bg-color)" />
+              <stop offset="0%" stopColor="var(--asset-bg-color)" />
+              <stop offset="100%" stopColor="var(--secondary-bg-color)" />
             </linearGradient>
           </defs>
           <path
             d="M150 10 L500 10 L600 90 L800 90"
             stroke="url(#gradient2)"
-            stroke-width="3"
+            strokeWidth="3"
           />
         </svg>
       </div>
@@ -59,8 +59,8 @@ const Footer = () => {
             <div className={style.footer__social__icons}>
             <svg width="0" height="0">
                 <linearGradient id="blue-gradient" x1="0%" y1="0%" x2="50%" y2="0%">
-                  <stop offset="0%" stop-color="var(--asset-bg-color)" />
-                  <stop offset="100%" stop-color="var(--secondary-bg-color)" />
+                  <stop offset="0%" stopColor="var(--asset-bg-color)" />
+                  <stop offset="100%" stopColor="var(--secondary-bg-color)" />
                 </linearGradient>
               </svg>
               <span className={style.icon__wrap__wrap}><span className={style.icon__wrap}><FaDiscord className={style.icon} style={{ fill: "url(#blue-gradient)" }} /></span></span>
@@ -77,8 +77,8 @@ const Footer = () => {
             <div className={style.mobile__footer__social__icons}>
               <svg width="0" height="0">
                 <linearGradient id="red-gradient" x1="0%" y1="0%" x2="50%" y2="0%">
-                  <stop offset="0%" stop-color="var(--asset-bg-color)" />
-                  <stop offset="100%" stop-color="var(--secondary-bg-color)" />
+                  <stop offset="0%" stopColor="var(--asset-bg-color)" />
+                  <stop offset="100%" stopColor="var(--secondary-bg-color)" />
                 </linearGradient>
               </svg>
               <span className={style.icon__wrap__wrap}><span className={style.icon__wrap}><FaDiscord className={style.icon} style={{ fill: "url(#red-gradient)" }} /></span></span>
