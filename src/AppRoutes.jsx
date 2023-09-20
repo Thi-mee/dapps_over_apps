@@ -36,7 +36,7 @@ export const router = createBrowserRouter([
         element: <Team />,
       },
       {
-        path: "/portfolio",
+        path: "/gallery/portfolio",
         element: <Portfolio />,
       },
       {
@@ -52,9 +52,13 @@ export const router = createBrowserRouter([
         element: <Portfolio1 />,
       },
       {
-        path: "/events",
+        path: "gallery/events",
         element: <Events />,
       },
+      {
+        path: "*",
+        element: <h1>404</h1>,
+      }
     ],
   },
 ]);

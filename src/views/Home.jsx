@@ -16,7 +16,7 @@ const Home = () => {
         <div className={style.ctn_text}>
           <h1>A Home for all techies and creative builders</h1>
           <p>Encouraging builder and traditional developers explore the world of web 3.0 and "get smart" with blockchain infrastructures</p>
-          <Button text="Join the Waitlist" bgColor="linear-gradient(90deg, var(--secondary-bg-color) 0%, var(--asset-bg-color) 100%)" />
+          <Button text="Join the Waitlist" bgColor="linear-gradient(90deg, var(--secondary-bg-color) 0%, var(--asset-bg-color) 100%)" className={style.ctab}/>
         </div>
         <img src={Frame_3} alt='' className={style.hero_img}  />
       </div> 
@@ -24,6 +24,7 @@ const Home = () => {
       <div className={style.second_section}>
         <p>Partners and Sponsors</p>
         <div>
+          <img src={Component_5} alt=''/>
           <img src={Component_5} alt=''/>
         </div>
       </div>
@@ -48,7 +49,7 @@ const Home = () => {
 
       <div className={style.fourth_section}>
         <h1>Learn more about the dApps over apps community</h1>
-        <Link to="/about">About Us</Link>
+        <Link to="/about" className={style.linkBtn}>About Us</Link>
       </div>
 
     </div>
