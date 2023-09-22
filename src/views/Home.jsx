@@ -22,7 +22,7 @@ const Home = () => {
       </div> 
 
       <div className={style.second_section}>
-        <p>Partners and Sponsors</p>
+        <p>Partners</p>
         <div>
           <img src={Component_5} alt=''/>
           <img src={Component_5} alt=''/>

@@ -18,12 +18,9 @@ import ellipse_1 from "../assets/Team_Assets/Ellipse 388.png";
 import ellipse_2 from "../assets/Team_Assets/Ellipse 389.png";
 import ellipse_3 from "../assets/Team_Assets/Ellipse 387.png";
 import TeamCard from "../components/Team_Card/Team_Card";
-import Person_1 from "../assets/Team_Assets/Rectangle 4298.png";
-import Person_2 from "../assets/Team_Assets/Rectangle 4299(1).png";
-import Person_3 from "../assets/Team_Assets/Rectangle 4300.png";
-import Person_4 from "../assets/Team_Assets/Rectangle 4301.png";
-import Person_5 from "../assets/Team_Assets/Rectangle 4302.png";
-import Person_6 from "../assets/Team_Assets/Rectangle 4303.png";
+import Person_1 from "../assets/Team_Assets/co-founder.png";
+import Person_2 from "../assets/Team_Assets/project-manager.png";
+import Person_3 from "../assets/Team_Assets/tech-lead.png";
 import Button from "../components/Button/Button"
 
 
@@ -62,39 +59,20 @@ const Team = () => {
         <div className={style.team__col}>
           <TeamCard
             imgPath={Person_1}
-            name={"Hillary Clinton"}
-            role={"Founder and CEO"}
+            name={"Abdulkareem Oyeneye"}
+            role={"Co-founder/COO"}
           />
 
           <TeamCard
             imgPath={Person_2}
-            name={"Hillary Clinton"}
-            role={"Founder and CEO"}
+            name={"Adebimpe O."}
+            role={"Project Manager"}
           />
 
           <TeamCard
             imgPath={Person_3}
-            name={"Hillary Clinton"}
-            role={"Founder and CEO"}
-          />
-        </div>
-        <div className={style.team__col}>
-          <TeamCard
-            imgPath={Person_4}
-            name={"Hillary Clinton"}
-            role={"Founder and CEO"}
-          />
-
-          <TeamCard
-            imgPath={Person_5}
-            name={"Hillary Clinton"}
-            role={"Founder and CEO"}
-          />
-
-          <TeamCard
-            imgPath={Person_6}
-            name={"Hillary Clinton"}
-            role={"Founder and CEO"}
+            name={"Emmanuel Hillary U."}
+            role={"Tech Lead"}
           />
         </div>
       </div>
