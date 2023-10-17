@@ -131,13 +131,18 @@
 
 
 @media only screen and (max-width: 800px) {
+  .container {
+    width: 90%;
+    margin-inline: auto;
+  }
   .footer_sec {
     flex-direction: column;
     justify-content: center;
   }
 
   .footer_links {
-    margin-top: 2em;
+    margin-top: 1em;
+    gap: .8rem;
     margin-bottom: 2em;
     opacity: 0.8;
   }
@@ -164,7 +169,6 @@
     justify-content: center;
     gap: 1em;
     margin-top: 3em;
-    margin-bottom: 2em;
   }
 
   .col_3 button {
