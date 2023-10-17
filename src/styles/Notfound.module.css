@@ -1,0 +1,120 @@
+.nf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* font-size: clamp(1.5em, 5vw, 2.5em); */
+}
+
+.nf_content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: clamp(300px, 50%, 600px);
+}
+
+.nf_content ul {
+  list-style: none;
+  padding: 0;
+  padding-top: 1em;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.nf_content li::before {
+  content: "👉🏽  ";
+}
+
+.nf_content li::after {
+  content: "";
+  display: block;
+  width: 100%;
+  margin-top: 0.5em;
+  height: 1px;
+  background-color: var(--primary-text-color);
+  opacity: 0.2;
+}
+
+.pink_blur {
+  filter: blur(300px);
+  background-color: color-mix(in srgb, var(--asset-bg-color) 60%, #000 10%);
+  width: 273px;
+  height: 410px;
+  border-radius: 710px;
+  position: fixed;
+  top: 0;
+  left: -20px;
+  z-index: 0;
+}
+.orange_blur {
+  filter: blur(300px);
+  background-color: color-mix(in srgb, orange 60%, #000 10%);
+  width: 203px;
+  height: 200px;
+  border-radius: 710px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+}
+.green_blur {
+  filter: blur(300px);
+  background-color: color-mix(in srgb, rgb(0, 255, 17) 70%, #000 10%);
+  width: 263px;
+  height: 210px;
+  border-radius: 710px;
+  position: fixed;
+  top: 70%;
+  left: 30%;
+  z-index: -1;
+}
+.yellow_blur {
+  filter: blur(300px);
+  background-color: color-mix(in srgb, yellow 60%, #000 10%);
+  width: 273px;
+  height: 310px;
+  border-radius: 710px;
+  position: fixed;
+  right: 10%;
+  top: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: 880px) {
+  /* .nf {
+    padding: 10em 2em;
+  } */
+  .pink_blur {
+    background-color: color-mix(in srgb, var(--asset-bg-color) 60%, #000 10%);
+    width: 273px;
+    height: 410px;
+    top: 0;
+    left: -20;
+  }
+  .orange_blur {
+    background-color: color-mix(in srgb, orange 60%, #000 10%);
+    width: 203px;
+    height: 200px;
+    bottom: -10%;
+    left: 70%;
+  }
+  .green_blur {
+    background-color: color-mix(in srgb, rgb(0, 255, 17) 70%, #000 10%);
+    width: 193px;
+    height: clamp(100px, 15%, 210px);
+    top: 70%;
+    left: 0%;
+  }
+  .yellow_blur {
+    background-color: color-mix(in srgb, yellow 60%, #000 10%);
+    width: 173px;
+    height: 210px;
+    right: 10%;
+    top: 0;
+  }
+}

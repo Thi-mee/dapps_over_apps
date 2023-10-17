@@ -5,12 +5,13 @@ import group_1 from "../assets/Portfolio_Assets/Rectangle 4309.png";
 import group_2 from "../assets/Portfolio_Assets/Rectangle 4310.png";
 import group_3 from "../assets/Portfolio_Assets/Rectangle 4314.png";
 import PortfolioSlider from "../components/PortfolioSlider/PortfolioSlider";
+import Page from "../components/Page";
 
 const Portfolio1 = () => {
   const images = [group_1, group_2, group_3];
 
   return (
-    <div className={style.container}>
+    <Page className={style.container}>
       <ImageSlider images={images} slideInterval={3000} />
 
       <h1>dApps over apps Conference, Unilag. Lagos, Nigeria</h1>
@@ -45,7 +46,7 @@ const Portfolio1 = () => {
           </h3>
         </div>
       </div>
-    </div>
+    </Page>
   );
 };
 

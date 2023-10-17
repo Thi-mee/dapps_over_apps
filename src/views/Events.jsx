@@ -16,10 +16,11 @@ import polygon_4 from "../assets/Events_Assets/Polygon 5(1).png";
 import Union from "../assets/Events_Assets/Union.png";
 import { CiLocationOn } from "react-icons/ci";
 import { BsArrowUpRight } from "react-icons/bs";
+import Page from "../components/Page";
 
 const Events = () => {
   return (
-    <div >
+    <Page >
       <section className={style.first__section}>
         <div className={style.first__section__flex}>
             <p className={style.first__section__para}>June 24 - 25 2023</p>
@@ -187,7 +188,7 @@ const Events = () => {
           </div>
         </div>
       </section>
-    </div>
+    </Page>
   );
 };
 

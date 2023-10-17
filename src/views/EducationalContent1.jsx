@@ -14,10 +14,11 @@ import Image_5 from "../assets/Educational_Content_Assets/Rectangle 4289.png";
 import Image_6 from "../assets/Educational_Content_Assets/Rectangle 4290.png";
 import EduCard from '../components/Edu_Card/Edu_Card';
 import EducationalSlider from '../components/EducationalSlider/EducationalSlider';
+import Page from '../components/Page';
 
 const EducationalContent1 = () => {
   return (
-    <div className={style.container}>
+    <Page className={style.container}>
     <p className={style.blog__date}>24 June 2023</p>
 
     <div className={style.blog__content}>
@@ -151,7 +152,7 @@ const EducationalContent1 = () => {
 
       </div>
     </div>
-  </div>
+  </Page>
   )
 }
 

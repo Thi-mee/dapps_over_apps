@@ -12,10 +12,11 @@ import Image_3 from "../assets/Educational_Content_Assets/Rectangle 4283.png";
 import Image_4 from "../assets/Educational_Content_Assets/Rectangle 4288.png";
 import Image_5 from "../assets/Educational_Content_Assets/Rectangle 4289.png";
 import Image_6 from "../assets/Educational_Content_Assets/Rectangle 4290.png";
+import Page from "../components/Page";
 
 const Educatonal_Content = () => {
   return (
-    <div>
+    <Page>
       <div className={style.vector__images}>
         <img src={Vector_1} alt="" className={style.vector_1} />
         <img src={Vector_2} alt="" className={style.vector_2} />
@@ -83,7 +84,7 @@ const Educatonal_Content = () => {
           />
         </div>
       </div>
-    </div>
+    </Page>
   );
 };
 
