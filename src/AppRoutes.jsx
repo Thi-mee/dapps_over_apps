@@ -10,9 +10,11 @@ import Portfolio from "./views/Portfolio";
 import EducationalContent1 from "./views/EducationalContent1";
 import Portfolio1 from "./views/Portfolio1";
 import Events from "./views/Events";
+import NotFoundPage from "./views/NotFoundPage";
 
 export const router = createBrowserRouter([
   {
+    path: "/",
     element: <Layout />,
     children: [
       {
@@ -55,12 +57,12 @@ export const router = createBrowserRouter([
         path: "gallery/events",
         element: <Events />,
       },
-      {
-        path: "*",
-        element: <h1>404</h1>,
-      }
     ],
   },
+  {
+    path: "*",
+    element: <NotFoundPage />,
+  }
 ]);
 
 //

@@ -7,6 +7,8 @@
   text-align: center;
   margin-top: 2em;
   margin-bottom: 2em;
+  /* width: 90%;
+  margin-inline: auto; */
 }
 
 .container h1 {
@@ -71,6 +73,8 @@
 .third_section {
   color: var(--primary-text-color);
   margin-top: 10em;
+  /* width: 90%;
+  margin-inline: auto; */
 }
 
 .third_section h1 {
@@ -99,7 +103,7 @@
 }
 
 .third__section__flex div p {
-  font-size: 1.25em;
+  font-size: 20px;
 }
 
 .fourth_section {
@@ -107,30 +111,33 @@
   border-radius: 20px;
   background: linear-gradient(135deg, #c71585 0%, #000 50.03%, #551a8b 97.23%);
   padding: 5em 2em;
-  margin-bottom: 5em;
+  margin-bottom: 0;
   text-align: center;
+  width: 75%;
+  margin-inline: auto;
 }
 
 .fourth_section h1 {
   color: var(--primary-text-color);
   opacity: 1;
   margin-bottom: 1em;
+  font-size: 36px;
 }
 
 .fourth_section a {
-  border: 3px solid var(--asset-bg-color);
-  padding: 0.8em 2em;
+  border: 1px solid #C71585;
+  border-radius: 5px;
+  padding: 0.75em 2.6em;
   font-size: 1.15rem;
   background: transparent;
   color: var(--primary-text-color);
-  border-radius: 5px;
   cursor: pointer;
   display: inline-block;
 }
 
 .pink_blur {
   filter: blur(300px);
-  background-color: color-mix(in srgb, var(--asset-bg-color) 70%, #000 10%) ;
+  background-color: color-mix(in srgb, var(--asset-bg-color) 70%, #000 10%);
   width: 473px;
   height: 710px;
   border-radius: 710px;
@@ -274,7 +281,6 @@
     font-size: 1rem;
   }
 }
-
 
 .ctab {
   transition: scale 0.2s ease-in-out;

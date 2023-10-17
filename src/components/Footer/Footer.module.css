@@ -1,6 +1,6 @@
 .footer__line {
   margin-left: -8em;
-  margin-top: 10em;
+  margin-top: 98px;
 }
 
 .small__footer__line__div{
@@ -27,7 +27,7 @@
 .footer_links {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 20px;
 }
 
 .footer_links a {

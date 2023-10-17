@@ -7,44 +7,31 @@ import style from "./Navbar.module.css";
 import Button from "../Button/Button";
 import { BsFillCaretDownFill } from "react-icons/bs";
 
+const openNavClass = `navbar_links nav__active ${style.links}`;
+const closedNavClass = `navbar_links ${style.links}`;
+
 const Navbar = () => {
   const location = useLocation();
-  const [active, setActive] = useState("navbar_links");
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
-  const isDropdownActive = () => {
-    if (location.pathname.startsWith("/gallery")) {
-      return true;
-    } else {
-      return false;
-    }
-  };
+  const isDropdownActive = () => !!location.pathname.startsWith("/gallery");
 
   const dropdownBtnClass = () => {
-    if (isDropdownActive()) {
-      return `${style.dropbtn} ${style.active}`;
-    } else {
-      return style.dropbtn;
-    }
+    return isDropdownActive()
+      ? `${style.dropbtn} ${style.active}`
+      : style.dropbtn;
   };
 
-  const navToggle = () => {
-    active === "navbar_links"
-      ? setActive("navbar_links nav__active")
-      : setActive("navbar_links");
-  };
+  const navToggle = () => setMobileNavOpen((prev) => !prev);
 
-  const navClass = ({ isActive, isPending }) => {
-    if (isPending) {
-      return style.pending;
-    } else if (isActive) {
-      return style.active;
-    }
-  };
+  const navClass = ({ isActive }) => (isActive ? style.active : "");
 
   return (
     <nav className={style.navbar}>
-      <img src={logo} alt="" className={style.logo} />
-      <div className={`${active} ${style.links}`}>
+      <div className={style.logoCtn}>
+        <img src={logo} alt="" className={style.logo} />
+      </div>
+      <div className={mobileNavOpen ? openNavClass : closedNavClass}>
         <NavLink to="/" className={navClass} onClick={navToggle}>
           Home
         </NavLink>
@@ -80,11 +67,7 @@ const Navbar = () => {
         />
       </div>
       <div onClick={navToggle} className="nav__toggler">
-        {active === "navbar_links" ? (
-          <img src={nav__toggler} alt="" />
-        ) : (
-          <img src={nav__closer} alt="" />
-        )}
+        <img src={mobileNavOpen ? nav__closer : nav__toggler} alt="" />
       </div>
     </nav>
   );

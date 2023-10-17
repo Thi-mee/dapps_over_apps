@@ -9,11 +9,12 @@ import group_1 from "../assets/Portfolio_Assets/Rectangle 4309.png";
 import group_2 from "../assets/Portfolio_Assets/Rectangle 4310.png";
 import group_3 from "../assets/Portfolio_Assets/Rectangle 4314.png";
 import { Link } from "react-router-dom";
+import Page from "../components/Page";
 
 
 const Portfolio = () => {
   return (
-    <div>
+    <Page>
       <div className={style.vector__images}>
         <img src={ellipse_1} alt="" className={style.ellipse_1} />
         <img src={circle_1} alt="" className={style.circle_1} />
@@ -50,7 +51,7 @@ const Portfolio = () => {
         <div><p>Rhe conference was held in unilag b and so on and so forth</p></div>
         <hr className={style.third__pink__line}/>
       </div>
-    </div>
+    </Page>
   );
 };
 

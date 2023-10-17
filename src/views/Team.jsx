@@ -22,11 +22,12 @@ import Person_1 from "../assets/Team_Assets/co-founder.png";
 import Person_2 from "../assets/Team_Assets/project-manager.png";
 import Person_3 from "../assets/Team_Assets/tech-lead.png";
 import Button from "../components/Button/Button"
+import Page from "../components/Page";
 
 
 const Team = () => {
   return (
-    <div>
+    <Page>
       <div className={style.vector__images}>
         <img src={image_4} alt="" className={style.image_4} />
         <img src={polygon_1} alt="" className={style.polygon_1} />
@@ -82,7 +83,7 @@ const Team = () => {
         <Button text={"Join Us"} bgColor="linear-gradient(90deg, var(--secondary-bg-color) 0%, var(--asset-bg-color) 100%)"/>
       </div>
 
-    </div>
+    </Page>
   );
 };
 

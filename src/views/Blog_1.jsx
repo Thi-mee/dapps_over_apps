@@ -15,11 +15,12 @@ import NFT_4 from "../assets/Blog_Assets/Rectangle 4261.png";
 import NFT_5 from "../assets/Blog_Assets/Rectangle 4258.png";
 import Card from "../components/Card/Card";
 import ReactSlider from "../components/ReactSlider/ReactSlider";
+import Page from "../components/Page";
 
 
 const Blog_1 = () => {
   return (
-    <div className={style.container}>
+    <Page className={style.container}>
       <p className={style.blog__date}>24 June 2023</p>
 
       <div className={style.blog__content}>
@@ -161,7 +162,7 @@ const Blog_1 = () => {
 
         </div>
       </div>
-    </div>
+    </Page>
   );
 };
 

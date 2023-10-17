@@ -10,7 +10,6 @@ import {
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
-
 const Footer = () => {
   return (
     <div>
@@ -57,17 +56,57 @@ const Footer = () => {
 
           <div className={style.col_3}>
             <div className={style.footer__social__icons}>
-            <svg width="0" height="0">
-                <linearGradient id="blue-gradient" x1="0%" y1="0%" x2="50%" y2="0%">
+              <svg width="0" height="0">
+                <linearGradient
+                  id="blue-gradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="50%"
+                  y2="0%">
                   <stop offset="0%" stopColor="var(--asset-bg-color)" />
                   <stop offset="100%" stopColor="var(--secondary-bg-color)" />
                 </linearGradient>
               </svg>
-              <span className={style.icon__wrap__wrap}><span className={style.icon__wrap}><FaDiscord className={style.icon} style={{ fill: "url(#blue-gradient)" }} /></span></span>
-              <span className={style.icon__wrap__wrap}><span className={style.icon__wrap}><FaFacebookF className={style.icon} style={{ fill: "url(#blue-gradient)" }} /></span></span>
-              <span className={style.icon__wrap__wrap}><span className={style.icon__wrap}><FaTwitter className={style.icon} style={{ fill: "url(#blue-gradient)" }} /></span></span>
-              <span className={style.icon__wrap__wrap}><span className={style.icon__wrap}><FaInstagram className={style.icon} style={{ fill: "url(#blue-gradient)" }} /></span></span>
-              <span className={style.icon__wrap__wrap}><span className={style.icon__wrap}><FaLinkedinIn className={style.icon} style={{ fill: "url(#blue-gradient)" }} /></span></span>
+              <span className={style.icon__wrap__wrap}>
+                <span className={style.icon__wrap}>
+                  <FaDiscord
+                    className={style.icon}
+                    style={{ fill: "url(#blue-gradient)" }}
+                  />
+                </span>
+              </span>
+              <span className={style.icon__wrap__wrap}>
+                <span className={style.icon__wrap}>
+                  <FaFacebookF
+                    className={style.icon}
+                    style={{ fill: "url(#blue-gradient)" }}
+                  />
+                </span>
+              </span>
+              <span className={style.icon__wrap__wrap}>
+                <span className={style.icon__wrap}>
+                  <FaTwitter
+                    className={style.icon}
+                    style={{ fill: "url(#blue-gradient)" }}
+                  />
+                </span>
+              </span>
+              <span className={style.icon__wrap__wrap}>
+                <span className={style.icon__wrap}>
+                  <FaInstagram
+                    className={style.icon}
+                    style={{ fill: "url(#blue-gradient)" }}
+                  />
+                </span>
+              </span>
+              <span className={style.icon__wrap__wrap}>
+                <span className={style.icon__wrap}>
+                  <FaLinkedinIn
+                    className={style.icon}
+                    style={{ fill: "url(#blue-gradient)" }}
+                  />
+                </span>
+              </span>
             </div>
             <p>
               Join our mailing list to recieve latest updates and announcements
@@ -76,16 +115,56 @@ const Footer = () => {
             <button>Subscribe</button>
             <div className={style.mobile__footer__social__icons}>
               <svg width="0" height="0">
-                <linearGradient id="red-gradient" x1="0%" y1="0%" x2="50%" y2="0%">
+                <linearGradient
+                  id="red-gradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="50%"
+                  y2="0%">
                   <stop offset="0%" stopColor="var(--asset-bg-color)" />
                   <stop offset="100%" stopColor="var(--secondary-bg-color)" />
                 </linearGradient>
               </svg>
-              <span className={style.icon__wrap__wrap}><span className={style.icon__wrap}><FaDiscord className={style.icon} style={{ fill: "url(#red-gradient)" }} /></span></span>
-              <span className={style.icon__wrap__wrap}><span className={style.icon__wrap}><FaFacebookF className={style.icon} style={{ fill: "url(#red-gradient)" }} /></span></span>
-              <span className={style.icon__wrap__wrap}><span className={style.icon__wrap}><FaTwitter className={style.icon} style={{ fill: "url(#red-gradient)" }} /></span></span>
-              <span className={style.icon__wrap__wrap}><span className={style.icon__wrap}><FaInstagram className={style.icon} style={{ fill: "url(#red-gradient)" }} /></span></span>
-              <span className={style.icon__wrap__wrap}><span className={style.icon__wrap}><FaLinkedinIn className={style.icon} style={{ fill: "url(#red-gradient)" }} /></span></span>
+              <span className={style.icon__wrap__wrap}>
+                <span className={style.icon__wrap}>
+                  <FaDiscord
+                    className={style.icon}
+                    style={{ fill: "url(#red-gradient)" }}
+                  />
+                </span>
+              </span>
+              <span className={style.icon__wrap__wrap}>
+                <span className={style.icon__wrap}>
+                  <FaFacebookF
+                    className={style.icon}
+                    style={{ fill: "url(#red-gradient)" }}
+                  />
+                </span>
+              </span>
+              <span className={style.icon__wrap__wrap}>
+                <span className={style.icon__wrap}>
+                  <FaTwitter
+                    className={style.icon}
+                    style={{ fill: "url(#red-gradient)" }}
+                  />
+                </span>
+              </span>
+              <span className={style.icon__wrap__wrap}>
+                <span className={style.icon__wrap}>
+                  <FaInstagram
+                    className={style.icon}
+                    style={{ fill: "url(#red-gradient)" }}
+                  />
+                </span>
+              </span>
+              <span className={style.icon__wrap__wrap}>
+                <span className={style.icon__wrap}>
+                  <FaLinkedinIn
+                    className={style.icon}
+                    style={{ fill: "url(#red-gradient)" }}
+                  />
+                </span>
+              </span>
             </div>
           </div>
         </div>
